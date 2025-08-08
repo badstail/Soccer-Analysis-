@@ -1,0 +1,27 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Build/dist
+build/
+dist/
+*.egg-info/
+
+# Virtual envs
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints
+
+# Coverage and caches
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+
+# IDE/editor files
+*.vscode/
+.idea/
