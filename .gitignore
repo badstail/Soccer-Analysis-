@@ -1,27 +1,66 @@
-# Byte-compiled files
+# ─────────────────────────────
+# Python cache / build files
+# ─────────────────────────────
 __pycache__/
-*.py[cod]
-
-# Build/dist
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
 build/
 dist/
-*.egg-info/
 
-# Virtual envs
+# ─────────────────────────────
+# Virtual environments
+# ─────────────────────────────
+.venv/
 venv/
 env/
-.venv/
-.env/
+ENV/
 
-# Jupyter checkpoints
-.ipynb_checkpoints
+# ─────────────────────────────
+# OS-specific garbage
+# ─────────────────────────────
+.DS_Store
+Thumbs.db
 
-# Coverage and caches
-htmlcov/
-.coverage
-.coverage.*
-.cache/
-
-# IDE/editor files
-*.vscode/
+# ─────────────────────────────
+# IDE settings
+# ─────────────────────────────
+.vscode/
 .idea/
+
+# ─────────────────────────────
+# Data & model files
+# ─────────────────────────────
+# Raw & processed video outputs
+data/outputs/
+*.mp4
+*.avi
+*.mov
+
+# Model weights (big files, usually downloaded separately)
+models/
+*.pt
+*.onnx
+*.weights
+
+# Large CSVs (if you want to keep only samples in repo)
+*.csv
+!data/samples/*.csv  # allow small example files
+
+# ─────────────────────────────
+# Logs
+# ─────────────────────────────
+logs/
+*.log
+
+# ─────────────────────────────
+# Temporary files
+# ─────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.swp
+
