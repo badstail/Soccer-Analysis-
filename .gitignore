@@ -1,66 +1,59 @@
-# ─────────────────────────────
-# Python cache / build files
-# ─────────────────────────────
+# ---- Python cruft
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 *.so
 *.egg-info/
 .eggs/
 build/
 dist/
 
-# ─────────────────────────────
-# Virtual environments
-# ─────────────────────────────
+# ---- Virtual envs
 .venv/
 venv/
 env/
 ENV/
 
-# ─────────────────────────────
-# OS-specific garbage
-# ─────────────────────────────
+# ---- OS / IDE junk
 .DS_Store
 Thumbs.db
-
-# ─────────────────────────────
-# IDE settings
-# ─────────────────────────────
 .vscode/
 .idea/
 
-# ─────────────────────────────
-# Data & model files
-# ─────────────────────────────
-# Raw & processed video outputs
+# ---- Data & media (keep repo slim)
 data/outputs/
+data/tmp/
 *.mp4
-*.avi
 *.mov
+*.avi
+*.mkv
+*.gif
+*.webm
+*.png
+*.jpg
+*.jpeg
 
-# Model weights (big files, usually downloaded separately)
+# Allow small demo assets in docs/ or samples
+!docs/*.png
+!docs/*.jpg
+!data/samples/**
+# (tip: keep samples <2–5MB)
+
+# ---- Models / weights
 models/
 *.pt
 *.onnx
 *.weights
 
-# Large CSVs (if you want to keep only samples in repo)
-*.csv
-!data/samples/*.csv  # allow small example files
-
-# ─────────────────────────────
-# Logs
-# ─────────────────────────────
+# ---- Logs & runs
 logs/
 *.log
+runs/
+wandb/
 
-# ─────────────────────────────
-# Temporary files
-# ─────────────────────────────
-*.tmp
-*.temp
-*.bak
-*.swp
+# ---- Notebooks (optional)
+*.ipynb_checkpoints
+.ipynb_checkpoints/
 
+# ---- Config you don’t want committed by accident
+*.env
+.env.*
